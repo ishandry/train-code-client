@@ -1,0 +1,36 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px; 10px/16px = 62.5% */
+}
+
+/* width < 1200? */
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 76.25%; /* 1rem = 9px, 9/16 = 50% */
+  }
+}
+
+/* width < 900? */
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 60%; /* 1rem = 8px, 8/16 = 50% */
+  }
+}
+
+/* big-desktop */
+@media screen and (min-width: 1201px) {
+  html {
+    font-size: 100%; /* 1rem = 12, 12/16 */
+  }
+}
+
+body {
+  box-sizing: border-box;
+}
